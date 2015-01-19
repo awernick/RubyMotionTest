@@ -15,6 +15,7 @@
  */
 
 // package com.example.android.common.view;
+package edu.utep.at.uteppros;
 
 // import android.content.Context;
 // import android.graphics.Typeface;
@@ -45,7 +46,8 @@
 //  * The views used as tabs can be customized by calling {@link #setCustomTabView(int, int)},
 //  * providing the layout ID of your custom layout.
 //  */
-// public class SlidingTabLayout extends HorizontalScrollView {
+
+ public class SlidingTabLayout extends android.widget.HorizontalScrollView{
 
     /**
      * Allows complete control over the colors drawn in the tab layout. Set with
@@ -79,18 +81,18 @@
 
     private final SlidingTabStrip mTabStrip;
 
-    // public SlidingTabLayout(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) {
-    //     super(context, attrs, defStyle);
-    //     // Disable the Scroll Bar
-    //     setHorizontalScrollBarEnabled(false);
-    //     // Make sure that the Tab Strips fills this android.view.View
-    //     setFillViewport(true);
+    public SlidingTabLayout(android.content.Context arg0, android.util.AttributeSet arg1, int arg2) {
+        super(context, attrs, defStyle);
+        // Disable the Scroll Bar
+        setHorizontalScrollBarEnabled(false);
+        // Make sure that the Tab Strips fills this android.view.View
+        setFillViewport(true);
 
-    //     mTitleOffset = (int) (TITLE_OFFSET_DIPS * getResources().getDisplayMetrics().density);
+        mTitleOffset = (int) (TITLE_OFFSET_DIPS * getResources().getDisplayMetrics().density);
 
-    //     mTabStrip = new SlidingTabStrip(context);
-    //     addView(mTabStrip, LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-    // }
+        mTabStrip = new SlidingTabStrip(context);
+        addView(mTabStrip, LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
+    }
 
     /**
      * Set the custom {@link TabColorizer} to be used.
@@ -301,5 +303,4 @@
             }
         }
     }
-
-// }
+}

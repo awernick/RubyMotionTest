@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-// package edu.utep.at.uteppros;
+package edu.utep.at.uteppros;
 
 // import android.android.R;
 // import android.content.android.content.Context;
@@ -26,7 +26,7 @@
 // import android.view.android.view.android.view.android.view.View;
 // import android.widget.android.widget.LinearLayout;
 
-// class SlidingTabStrip extends android.widget.android.widget.LinearLayout {
+class SlidingTabStrip extends android.widget.android.widget.LinearLayout {
 
     private static final int DEFAULT_BOTTOM_BORDER_THICKNESS_DIPS = 2;
     private static final byte DEFAULT_BOTTOM_BORDER_COLOR_ALPHA = 0x26;
@@ -205,4 +205,4 @@
             mDividerColors = colors;
         }
     }
-// }
+}
